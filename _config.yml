@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: MelonEater.site
 subtitle: ''
-description: ''
+description: 'A Media Boy Majoring in Engineering'
 keywords:
-author: John Doe
+author: meloneater
 language: en
 timezone: ''
 
@@ -103,5 +103,5 @@ theme: butterfly #landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/MelonEater/MelonEater.github.io.git
-  branch: siteBranch
+  repository: https://github.com/MelonEater/MelonEater.github.io.git # 这个仓库名不能动
+  branch: main # 生成网址的分支
