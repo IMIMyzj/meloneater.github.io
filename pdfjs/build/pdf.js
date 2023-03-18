@@ -16616,7 +16616,7 @@ class TextAnnotationElement extends AnnotationElement {
     this.container.className = "textAnnotation";
     const image = document.createElement("img");
     image.src = this.imageResourcesPath + "annotation-" + this.data.name.toLowerCase() + ".svg";
-    image.alt = "[ Annotation]";
+    image.alt = "[{{type}} Annotation]";
     image.dataset.l10nId = "text_annotation_type";
     image.dataset.l10nArgs = JSON.stringify({
       type: this.data.name
@@ -17493,7 +17493,7 @@ class PopupElement {
     if (dateObject) {
       const modificationDate = document.createElement("span");
       modificationDate.className = "popupDate";
-      modificationDate.textContent = "1679160149874, ";
+      modificationDate.textContent = "{{date}}, {{time}}";
       modificationDate.dataset.l10nId = "annotation_date_string";
       modificationDate.dataset.l10nArgs = JSON.stringify({
         date: dateObject.toLocaleDateString(),
